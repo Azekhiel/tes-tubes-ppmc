@@ -1,5 +1,3 @@
-#!/bin/bash
-
 gcc main.c -o aco_program -lm
 
 echo "Test case 1:"
