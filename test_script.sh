@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Compile the program
-gcc -o aco_program main.c ACO.c -lm
+gcc -o aco_program main.c src/ACO.c -I src -lm
 
 # Test case 1
 echo -e "kota_05.csv\nMakassar" | ./aco_program > output1.txt
