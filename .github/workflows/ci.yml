@@ -17,7 +17,10 @@ jobs:
     - name: Install Make
       run: sudo apt-get install -y make
 
-    - name: Run tests
+    - name: Build and Run Tests
       run: |
-        chmod +x test_script.sh
-        ./test_script.sh
+          gcc main.c -o aco_program
+          echo "Test case 1:"
+          echo -e "kota_05.csv\nMakassar\n" | ./aco_program
+          echo "Test case 2:"
+          echo -e "kota_16.csv\nJayapura\n" | ./aco_program
