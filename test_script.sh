@@ -5,7 +5,7 @@ echo "Listing files in the current directory"
 ls -al
 
 # Compile the program
-gcc -o aco_program main.c ACO.c -lm
+gcc -o aco_program main.c -lm
 
 # Debugging: Check if the compilation was successful
 if [ ! -f ./aco_program ]; then
