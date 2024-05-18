@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: ci
 
 on: [push, pull_request]
 
@@ -17,4 +17,6 @@ jobs:
         compiler: gcc
 
     - name: Run tests
-      run: chmod +x test_script.sh && ./test_script.sh
+      run: |
+        chmod +x test_script.sh
+        ./test_script.sh
