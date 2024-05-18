@@ -19,7 +19,7 @@ jobs:
 
     - name: Build and Run Tests
       run: |
-          gcc main.c -o aco_program
+          gcc main.c -o aco_program -lm
           echo "Test case 1:"
           echo -e "kota_05.csv\nMakassar\n" | ./aco_program
           echo "Test case 2:"
