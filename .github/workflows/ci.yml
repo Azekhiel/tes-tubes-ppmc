@@ -1,4 +1,4 @@
-name: ci
+name: C/C++ CI
 
 on: [push, pull_request]
 
@@ -11,10 +11,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up C/C++ environment
-      uses: actions/setup-environment@v1
-      with:
-        compiler: gcc
+    - name: Install GCC
+      run: sudo apt-get install -y gcc
+
+    - name: Install Make
+      run: sudo apt-get install -y make
 
     - name: Run tests
       run: |
