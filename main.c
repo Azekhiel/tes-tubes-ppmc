@@ -52,9 +52,10 @@ int main() {
             acoTSP(cities, numCities, numCities, startCityIndex, &bestAnt);
             i=0;
         }
-        else{
-            printf("%s -> ", cities[bestAnt.path[i]].name);
-        }
+
+    }
+    for (int i = 0; i < numCities; i++) {
+        printf("%s -> ", cities[bestAnt.path[i]].name);
     }
     printf("%s\n", cities[bestAnt.path[0]].name);
     printf("Jarak Tempuh: %f km\n", bestAnt.length);
