@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "antColonyOptimization.h"
-// #include "DFS.h"
+#include "DFS.h"
 #include "Genetic.h"
 #include "BruteForce.h"
 #include"PSO.h"
@@ -27,7 +27,5 @@ int main(){
     PSO(filename,startingCity);
     branch(filename,startingCity);
     BFS(filename,startingCity);
-
-
-    //DFS_final(filename);
+    DFS_final(filename);
 }
