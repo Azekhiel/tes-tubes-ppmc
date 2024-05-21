@@ -3,13 +3,11 @@
 #include <string.h>
 #include "antColonyOptimization.h"
 #include "DFS.h"
-#include "Genetic.h"
+#include "Genetic_biar sesuai laptop william outputnya.h"
 #include "BruteForce.h"
 #include"PSO.h"
 #include "branchBound.h"
 #include "BFS.h"
-
-#define MAX_CITIES 255
 
 int main(){
     char filename[255];
